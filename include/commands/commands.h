@@ -50,6 +50,13 @@ void lcd_enable_4bit_mode(lcd* _lcd);
 void lcd_enable_cursor(lcd* _lcd);
 
 /**
+ * @brief Disable the blinking cursor on LCD.
+ * 
+ * @param _lcd Pointer to LCD struct
+ */
+void lcd_disable_cursor(lcd* _lcd);
+
+/**
  * @brief Clear the LCD screen.
  * 
  * @param _lcd Pointer to LCD struct

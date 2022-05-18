@@ -48,7 +48,7 @@ int main()
     // FOUR = 4-bit mode, EIGHT = 8-bit mode
     lcd_init(&_lcd, data_ports, data_pins, GPIOB, 4, GPIOB, 3, GPIOB, 5, FOUR);
     
-    lcd_enable_cursor(&_lcd);
+    lcd_enable_cursor(&_lcd); // turn on blinking cursor (off by default)
 
     lcd_write_string(&_lcd, "ZACH");
     lcd_clear_char(&_lcd, 0, 2); // clear character at position (0, 2)

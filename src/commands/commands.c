@@ -147,6 +147,11 @@ void lcd_enable_cursor(lcd* _lcd)
     lcd_send_command(_lcd, 0, 0, 0b00001111);
 }
 
+void lcd_disable_cursor(lcd* _lcd)
+{
+    lcd_send_command(_lcd, 0, 0, 0b00001100);
+}
+
 void lcd_clear_screen(lcd* _lcd)
 {
     lcd_send_command(_lcd, 0, 0, 0b00000001);

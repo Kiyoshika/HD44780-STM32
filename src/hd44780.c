@@ -103,6 +103,9 @@ void lcd_init(
     if (_lcd->bit_mode == FOUR)
         lcd_enable_4bit_mode(_lcd);
 
+    // "turn on" display
+    lcd_send_command(_lcd, 0, 0, 0b00001100);
+
     // clear screen on startup
     lcd_clear_screen(_lcd);
 }
