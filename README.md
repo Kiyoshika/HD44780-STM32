@@ -1,5 +1,5 @@
 # HD44780 Library for STM32
-This is a light-weight library for interacting with the HD44780 character LCD (16x2).
+This is a lightweight library for interacting with the HD44780 character LCD (16x2).
 
 I made this library for a few reasons.
 1. Some of the existing libraries for this LCD were using HAL. I didn't feel like using it
